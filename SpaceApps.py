@@ -8,8 +8,8 @@ def cut(vx,vy):
     name1 =  "moon.jpg"
     im =Image.open(name1)
 
-    dx = 160 #偏移量
-    dy = 160
+    dx = 200 #偏移量
+    dy = 200
     n = 0
 
     x1 = 0  #從左上開始
@@ -70,7 +70,7 @@ if __name__ == '__main__':
         image = image.convert('RGB')
         rgb = get_dominant_color(image)
         f = open('RGB.txt','a')
-        f.write(str(i//23+1)+"-"+str(i%23)+str(rgb)+"\n")
+        f.write(str(i//19+1)+"-"+str(i%19)+str(rgb)+"\n")
         f.close()
 
 
