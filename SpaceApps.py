@@ -60,10 +60,6 @@ def get_dominant_color(image):
             dominant_color = (r,g,b)
     return dominant_color
 
-
-
-a=0
-tmp=0
 if __name__ == '__main__':
     for i in range (0,res+1):
         image = Image.open(str(i) + '.jpg')
@@ -72,6 +68,3 @@ if __name__ == '__main__':
         f = open('RGB.txt','a')
         f.write(str(i//23+1)+"-"+str(i%23)+str(rgb)+"\n")
         f.close()
-
-
-
